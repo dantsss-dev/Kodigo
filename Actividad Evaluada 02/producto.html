@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style/style.css" />
+    <title>Registro de Producto</title>
+  </head>
+
+  <body>
+    <form class="contenedor" action="guardado.html" method="get">
+      <div class="col-title"><h1>Registro de Producto</h1></div>
+      <div class="col">
+        <label>Codigo:</label> <input type="text" id="txtCodigo" />
+      </div>
+      <div class="col">
+        <label>Descripcion:</label>
+        <input type="text" id="txtDescripcion" />
+      </div>
+      <div class="col">
+        <label>Codigo de barra:</label>
+        <input type="text" id="txtCodigoBarra" />
+      </div>
+      <div class="col">
+        <label>Precio unitario:</label>
+        <input type="text" id="txtPrecioU" />
+      </div>
+      <div class="col">
+        <label>Stock:</label> <input type="text" id="txtStock" />
+      </div>
+      <div class="col">
+        <label>Proveedor:</label> <input type="text" id="txtProveedor" />
+      </div>
+      <div class="col">
+        <label>Estado:</label>
+        <input type="checkbox" id="chkActivo" />
+        <label class="chk-label">Activo</label>
+      </div>
+      <div class="col">
+        <label>Categoria</label>
+        <select id="Categorias">
+          <option value="0">Categoria 1</option>
+          <option value="1">Categoria 2</option>
+          <option value="2">Categoria 3</option>
+          <option value="3">Categoria 4</option>
+        </select>
+      </div>
+      <div class="footer">
+        <input class="btn-nuevo" type="submit" value="Guardar" />
+        <a class="btn-eliminar" href="index.html">Cancelar</a>
+      </div>
+    </form>
+  </body>
+</html>
