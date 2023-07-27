@@ -1,0 +1,83 @@
+@font-face {
+  font-family: Staatliches;
+  src: url(../fonts/Staatliches-Regular.ttf);
+}
+
+.dev-name {
+  font-family: Staatliches;
+  font-size: 5rem;
+  margin-bottom: 0;
+  color: #bfb283;
+}
+
+.line-decoration {
+  height: 3px;
+  border-radius: 100%;
+  background-image: radial-gradient(circle, #d7a319, transparent);
+}
+
+.icon-size-32 {
+  width: 32px;
+  height: 32px;
+}
+.background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.2;
+}
+.bg-container {
+  background-color: #2a3346;
+}
+
+.bg-btn-primary {
+  background-color: #d7a319;
+  color: white;
+}
+
+.bg-btn-secondary {
+  background-color: #7386b5;
+  color: white;
+}
+
+.bg-btn-primary:hover {
+  background-color: #99771b;
+}
+
+.bg-btn-secondary:hover {
+  background-color: #374770;
+}
+
+.card-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 148px; /* Ajusta aquí el tamaño deseado para la imagen */
+}
+
+.circle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #d7a319;
+}
+.line {
+  width: 10px;
+  height: 100%;
+  background-color: #ffffffec;
+}
+
+.card-img-overlay {
+  position: absolute;
+  display: none;
+}
+.card:hover .card-img-overlay {
+  display: block;
+}
+
+.bg-date {
+  background-color: #7386b5;
+}
