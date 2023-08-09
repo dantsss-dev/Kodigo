@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/style/style.css" />
+
+    <title>Product</title>
+  </head>
+  <body>
+    <div class="d-flex justify-content-center">
+      <form
+        class="d-flex justify-content-start col-md-4 row g-3 mt-4 needs-validation border rounded p-4"
+        novalidate
+        action="success.html"
+      >
+        <div class="col-md-12">
+          <label for="validationCustom01" class="form-label">Code</label>
+          <input
+            type="text"
+            class="form-control"
+            id="validationCustom01"
+            value=""
+            required
+          />
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+        <div class="col-md-12">
+          <label for="validationCustom01" class="form-label">Description</label>
+          <input
+            type="text"
+            class="form-control"
+            id="validationCustom01"
+            value=""
+            required
+          />
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+        <div class="col-md-12">
+          <label for="validationCustom01" class="form-label">Barcode</label>
+          <input
+            type="text"
+            class="form-control"
+            id="validationCustom01"
+            value=""
+            required
+          />
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+        <div class="col-md-12">
+          <label for="validationCustom01" class="form-label">Unite Price</label>
+          <input
+            type="text"
+            class="form-control"
+            id="validationCustom01"
+            value=""
+            required
+          />
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+        <div class="col-md-12">
+          <label for="validationCustom01" class="form-label">Stock</label>
+          <input
+            type="text"
+            class="form-control"
+            id="validationCustom01"
+            value=""
+            required
+          />
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+        <div class="col-md-12">
+          <label for="validationCustom01" class="form-label">Provider</label>
+          <input
+            type="text"
+            class="form-control"
+            id="validationCustom01"
+            value=""
+            required
+          />
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="invalidCheck"
+              required
+            />
+            <label class="form-check-label" for="invalidCheck"> Active </label>
+            <div class="invalid-feedback">
+              You must checked before submitting.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <label for="validationCustom04" class="form-label">State</label>
+          <select class="form-select" id="validationCustom04" required>
+            <option selected disabled value="">Choose...</option>
+            <option>Category 1</option>
+            <option>Category 2</option>
+            <option>Category 3</option>
+            <option>Category 4</option>
+          </select>
+          <div class="invalid-feedback">Please select a valid category.</div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-6 justify-content-start">
+            <button class="btn btn-primary" type="submit">Save</button>
+          </div>
+          <div class="col-6 justify-content-end">
+            <button class="btn btn-danger">Cancel</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script>
+      (function () {
+        "use strict";
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll(".needs-validation");
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms).forEach(function (form) {
+          form.addEventListener(
+            "submit",
+            function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
+  </body>
+</html>
